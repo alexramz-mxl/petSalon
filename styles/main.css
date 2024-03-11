@@ -1,0 +1,63 @@
+/*global*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*body*/
+body{
+    font-family: "Playpen Sans", cursive;
+
+}
+img{
+    max-width: 18%;
+}
+a{
+    text-decoration: none;
+}
+/*utilities*/
+.container{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-text{
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 1;
+    letter-spacing: 0.5px;
+}
+.secondary-text{
+    font-weight: 700;
+    font-size: 18px;
+}
+.normal-text{
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.centered-text{
+    text-align: center;
+}
+.btn{
+    display: block;
+    width: 175px;
+    background-color: black;
+    color: whitesmoke;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 30px;
+}
+/*header*/
+.site-header{
+    background-color: bisque;
+}
+.site-header h1{
+    font-weight: 200;
+    font-size: 35px;
+}
+nav a{
+        color: black;
+        font-weight: 300;
+        font-size: 20px;
+        margin-right: 15px;
+}
