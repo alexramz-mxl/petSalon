@@ -9,7 +9,7 @@ body{
 
 }
 img{
-    max-width: 18%;
+    width: 15rem;
 }
 a{
     text-decoration: none;
@@ -49,11 +49,18 @@ a{
 }
 /*header*/
 .site-header{
-    background-color: bisque;
+
+    background-color: rgb(203, 233, 252);
+}
+.bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
 }
 .site-header h1{
     font-weight: 200;
-    font-size: 35px;
+    font-size: 45px;
 }
 nav a{
         color: black;
