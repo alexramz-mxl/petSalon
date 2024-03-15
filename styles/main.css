@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 /*body*/
 body{
@@ -9,7 +10,7 @@ body{
 
 }
 img{
-    width: 15rem;
+    width: 250px;
 }
 a{
     text-decoration: none;
@@ -20,6 +21,36 @@ a{
     margin-left: auto;
     margin-right: auto;
 }
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+.margin-b30{
+    margin-bottom: 30px;
+}
+.margin-b80{
+    margin-bottom: 80px;
+}
+.h1{
+    color: rgb(9, 58, 88);
+    animation: move-left-right 2s 1;
+    animation-fill-mode: forwards;  
+}
+@keyframes move-left-right{
+    from{
+        transform: translateX(-90px);
+    }
+    to{
+        transform: translateX(10px);
+    }
+} 
 .main-text{
     font-weight: 900;
     font-size: 35px;
@@ -31,9 +62,12 @@ a{
     font-size: 18px;
 }
 .normal-text{
-    font-size: 20px;
+    font-size: 12px;
     line-height: 1.5;
     font-weight: 400;
+}
+.light-text{
+    font-weight: 280;
 }
 .centered-text{
     text-align: center;
@@ -46,25 +80,165 @@ a{
     padding: 1rem;
     text-align: center;
     margin-top: 30px;
+    font-size: 15px;
+    border: none;
+    border-radius: 1rem;
+}
+.btn:hover{
+    color: black;
+    background-color: white;
 }
 /*header*/
 .site-header{
-
-    background-color: rgb(203, 233, 252);
-}
-.bar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 7rem;
-}
-.site-header h1{
-    font-weight: 200;
-    font-size: 45px;
+    background-image: url(/img/backgr-dogsjpg.jpg);
 }
 nav a{
         color: black;
         font-weight: 300;
         font-size: 20px;
         margin-right: 15px;
+}
+.header-text{
+    width: 60%;
+}
+.header-img{
+    width: 40%;
+}
+/*more about us*/
+.more-about-us{
+    background-image: url(/img/backgrdog2.jpg);
+    color: rgb(255, 255, 255);
+}
+/*.more-about-us blur{
+    padding: 2rem 3rem;
+    border: 2px solid white;
+    box-shadow: 0 0 25px;
+    backdrop-filter: blur(80px);
+}*/
+/*register page*/
+.input-control{
+    margin-bottom: 15px;
+}
+.input-control label{
+    display: inline-block;
+    font-size: 20px;
+    width: 75px;
+    text-align: right;
+}
+.input-control input, 
+.input-control select{
+    font-size: 20px;
+    width: 70%;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+/*pet Cards*/
+#pets{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1rem;
+    margin-top: 3rem;
+}
+.petCard{
+    background-color: honeydew;
+    border: 1px solid lightcoral;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+/*pet Info*/
+.petsInfo{
+    display: flex;
+    background-color: yellowgreen;
+    justify-content: space-between;
+    margin: 1rem auto;
+    padding: 5px;
+    border-radius: 10px;
+}
+.petsInfo a{
+    display: flex;
+    background-color: rgb(222, 123, 123);
+    justify-content: space-between;
+    margin: 1rem auto;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.grooming{
+    background-color: lightseagreen;
+
+}
+.vaccine{
+    background-color: lightgoldenrodyellow;
+
+}
+.hotel{
+    background-color: lightpink;
+
+}
+/*footer*/
+.footer{
+    background-color: lightskyblue;
+    padding: 50px 0;
+}
+.container-footer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-row{
+    display: flex;
+   
+}
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-links h4{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    font-weight: 300;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    display: inline-block;
+ 
+}
+.footer-links ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+    margin-bottom: 3px;
+    transition: all .2s ease;
+}
+.footer-links ul li a:hover{
+    color: white;
+    padding-left: 5px;
+}
+.social-link a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: lightcoral;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all .5s ease;
+}
+.social-link a:hover{
+    background-color: rgb(217, 85, 85);
+}
+@media(max-width:991px){
+    .footer-row{
+        text-align: center;
+    }
+
+    .footer-links{
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Playpen+Sans:wght@100..800& display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/pngpupp.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>REGISTER</title>
+</head>
+<body>
+    <header>
+        <div class="container flex-container margin-b30">
+            <h1 class="h1">Pet Shop🐾</h1>
+            <nav>
+                <a href="index.html">🏠Home</a>
+                <a href="register.html">Register📝</a>
+            </nav>
+        </div>
+        <main class="container">
+            <img class="header b" src="/img/regist-pupp.png">
+            <h2 class="secondary-text centered-text">REGISTER A NEW PET:</h2>
+            <div>
+                <div class="input-control">
+                    <label>Name:*</label>
+                    <input type="text" id="txtName">
+                </div>
+                <div class="input-control">
+                    <label>Age:</label>
+                    <input type="text" id="txtAge">
+                </div>
+                <div class="input-control">
+                    <label>Gender:</label>
+                    <input type="text" id="txtGender">
+                </div>
+                <div class="input-control">
+                    <label>Breed:</label>
+                    <input type="text" id="txtBreed">
+                </div>
+                <div class="input-control">
+                    <label>Service:*</label>
+                    <select id="txtService">
+                        <option value=""selected disabled>-- Select an option --</option>
+                        <option value="Grooming">🛁 Grooming</option>
+                        <option value="Vaccine">💉 Vaccines</option>
+                        <option value="Hotel">🏨 Hotel</option>
+                    </select>
+                </div>
+                <div class="input-control">
+                    <label>Type:</label>
+                    <select id="txtType">
+                        <option value=""selected disabled>-- Select an option --</option>
+                        <option value="Dog">
+                            🦴It´s a Dog!</option>
+                            <option value="Cat">
+                                😺It´s a Cat!</option>
+                                <option value="Other">
+                                    🦅Another kind of pet</option>
+                                </select>
+                            </div>
+                            <div class="btn-container">
+                                <button class="btn" onclick="register();">Register</button>
+                            </div>
+                        </div>
+                    </main>
+                    <div id="petList"></div>
+                    <div class="petsInfo container">
+                        <h5 class="light-text">PETS INFORMATION</h5>
+                        <label>TOTAL: <span id="totalPets"></span></label>
+                        <div>
+                            <label>🛁: <span id="totalGroomings">0</span></label>
+                            <label>💉: <span id="totalVaccines">0</span></label>
+                            <label>🏨: <span id="totalHotels">0</span></label>
+                        </div>
+                    </div>
+                    <div id="petList"></div>
+                    <div class="petsInfo a container">
+            <h5 class="light-text">PET COUNTER:</h5>
+            <label>TOTAL: <span id="totalPets">0</span></label>
+            <div>
+                <label>🦴: <span id="totalDogs">0</span></label>
+                <label>😺: <span id="totalCats">0</span></label>
+                <label>🦅: <span id="totalOthers">0</span></label>
+            </div>
+        </div>
+        <div class="container" id="pets"></div>
+    </header>
+    <!--Create the form--> 
+    <script src="./scripts/register.js"></script>
+    <script src="./scripts/display.js"></script>
+
+    <footer class="footer">
+
+        <div class="container-footer">
+
+            <div class="footer-row">
+
+                <div class="footer-links">
+
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Website Accessibility Policy</a></li>
+                        <li><a href="#">Pet Store Locator</a></li>
+                    </ul>
+                </div>    
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Vital Care</a></li>
+                        <li><a href="#">Pet Adoption</a></li>
+                        <li><a href="#">Veterinary Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Corporate</h4>
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Follow Us</h4>
+                    <div class="social-link">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <label>Keep In Touch</label>
+            <input type="text">
+            <button>Sign Up</button>
+    </footer>
+</body>
+</html>
