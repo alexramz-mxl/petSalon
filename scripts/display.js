@@ -23,15 +23,39 @@ function displayCards(){
             <p>${pet.gender}</p>
             <p>${pet.breed}</p>
             <p>${pet.service}</p>
+            <p>${pet.type}</p>
         </div>
         `;
     }
     petsDiv.innerHTML=card;
 }
 
+function displayRows(){
+    const TABLE = document.getElementById("petTable");
+    row="";
+    for(let i=0;i<PetShop.pets.length;i++){
+        let pet = PetShop.pets[i];
+        row+=`
+        <tr>
+            <td>${pet.name}</td>
+            <td>${pet.age}</td>
+            <td>${pet.gender}</td>
+            <td>${pet.service}</td>
+            <td>${pet.type}</td>
+            <td><button class="btn-danger">Delete </button><td>
+        </tr>
+        `;
+    }
+    TABLE.innerHTML=row;
+}
+
+
 function displayTotalAmountPets(){
     document.getElementById("totalPets").innerHTML=PetShop.pets.length;
 }
+//function displayTotalAmountAnimals(){
+    //document.getElementById("totalAnimals").innerHTML=PetShop.pets.length;
+//}
 
 function displayServiceCount(){
     //declare variables
@@ -65,11 +89,11 @@ function displayPetsCount(){
 
     for(let i=0;i<PetShop.pets.length;i++){
         let pet = PetShop.pets[i];
-        if(pet.service.toLowerCase() == "dog"){
+        if(pet.type.toLowerCase() == "dog"){
             dog++;
             document.getElementById("totalDogs").innerHTML=dog;
         }
-        else if(pet.service.toLowerCase() == "cat"){
+        else if(pet.type.toLowerCase() == "cat"){
             //vaccines
             cat++;//increase vaccines count
             document.getElementById("totalCats").innerHTML=cat;
@@ -78,5 +102,4 @@ function displayPetsCount(){
             document.getElementById("totalOthers").innerHTML=other;
         }
     }
-
 }

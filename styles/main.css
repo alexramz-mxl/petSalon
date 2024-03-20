@@ -6,8 +6,10 @@
 }
 /*body*/
 body{
-    font-family: "Playpen Sans", cursive;
-
+    /*font-family: "Playpen Sans", cursive;*/
+        font-family: "Chewy", system-ui;
+        font-weight: 400;
+        font-style: normal;
 }
 img{
     width: 250px;
@@ -72,7 +74,7 @@ a{
 .centered-text{
     text-align: center;
 }
-.btn{
+/*.btn{
     display: block;
     width: 175px;
     background-color: black;
@@ -87,7 +89,7 @@ a{
 .btn:hover{
     color: black;
     background-color: white;
-}
+}*/
 /*header*/
 .site-header{
     background-image: url(/img/backgr-dogsjpg.jpg);
@@ -109,12 +111,6 @@ nav a{
     background-image: url(/img/backgrdog2.jpg);
     color: rgb(255, 255, 255);
 }
-/*.more-about-us blur{
-    padding: 2rem 3rem;
-    border: 2px solid white;
-    box-shadow: 0 0 25px;
-    backdrop-filter: blur(80px);
-}*/
 /*register page*/
 .input-control{
     margin-bottom: 15px;
@@ -157,15 +153,15 @@ nav a{
     padding: 5px;
     border-radius: 10px;
 }
-.petsInfo a{
+.petsInfocount{
     display: flex;
     background-color: rgb(222, 123, 123);
-    justify-content: space-between;
+    justify-content: center;
     margin: 1rem auto;
-    padding: 5px;
+    padding: 2px;
     border-radius: 10px;
 }
-
+/*cards*/
 .grooming{
     background-color: lightseagreen;
 
@@ -178,18 +174,18 @@ nav a{
     background-color: lightpink;
 
 }
+/*section*/
 /*footer*/
 .footer{
     background-color: lightskyblue;
     padding: 50px 0;
 }
 .container-footer{
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 .footer-row{
     display: flex;
-   
 }
 .footer-links{
     width: 25%;
@@ -197,7 +193,7 @@ nav a{
 }
 .footer-links h4{
     font-size: 20px;
-    color: rgb(255, 255, 255);
+    color:white;
     margin-bottom: 10px;
     font-weight: 300;
     border-bottom: 1px solid black;
@@ -242,3 +238,53 @@ nav a{
         margin-bottom: 30px;
     }
 }
+
+.dark{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+li{
+    cursor: pointer;
+}
+.notification{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+.close{
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+}
+#notificationText{
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
